@@ -62,7 +62,7 @@ public class LoginTestCase {
 		
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable
-					(By.xpath("//div[@class='sm']//button[text()=' 6 MONTHS ']")));
+					(By.xpath("//div[@class='lg']//button[text()=' 6 MONTHS ']")));
 			Actions act = new Actions(driver);
 			act.moveToElement(element1).perform();
 			element1.click();
